@@ -80,7 +80,6 @@ def submit():
     name = session['name']
     email = session['email']
     marks = session['marks']
-    marks = random.randint(0, 10)
     entry = Users(name=name, email=email, marks=marks, date=datetime.now())
     db.session.add(entry)
     db.session.commit()
