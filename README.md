@@ -18,6 +18,13 @@ This is an online assessment platform web application made using ```Python-Flask
 
 7.Assessment score shall be generated at the time of submission:heavy_check_mark:
 
+# Additional functionality
+
+1.```Login page``` - To take user's data.
+
+2.```user table``` - To store the data and scores of the user and the time of test submission.
+
+
 # Getting Started
 
 Clone the source code in your local machine and install the requirements by running
@@ -26,13 +33,13 @@ Clone the source code in your local machine and install the requirements by runn
 pip install -r requirements.txt 
 ```
 Load ```walkover_assessment.sql``` on your data base by running
-```bash
+```sql
 source walkover_assessment.sql
 ```
 on your command line client or simply import ```walkover_assessment.sql``` in your phpmyadmin
 
 Then edit ```config.json``` file
-```bash
+```json
 {
   "params":
   {
