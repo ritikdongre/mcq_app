@@ -1,6 +1,11 @@
-
 # mcq_app
 This is an online assessment platform web application made using ```Python-Flask``` microframework along with ```MySQL```(Phpmyadmin) database in backend and in frontend ```Jinja``` templating along with ```Html,css``` and a bit of ```javascript``` is used.
+
+
+
+https://user-images.githubusercontent.com/71232003/128176769-3c86b83d-3446-41c9-8132-173dacc355e1.mp4
+
+
 
 # Required functionality is statisfied
 
