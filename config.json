@@ -1,0 +1,9 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql://root:@localhost/walkover_assessment",
+    "production_uri": "mysql://root:@localhost/walkover_assessment"
+  }
+
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assessment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='questions.css')}}">
+        <script type="text/javascript">
+
+            function test()
+            {
+                var a = document.querySelector('input[name="option"]:checked').value;
+                var b = parseInt(document.getElementById("new").value);
+        
+                document.getElementById("next").href="/home?page="+(b+1)+"&option="+a;
+            }
+        </script>
+    </head>
+    <body>
+        {% for question in questions %}
+        <form action="/submit" method="POST">
+        <nav>
+            <h2>Time Remaining:</h2>
+            <p id ="countdown">15</p>
+            <script src="{{url_for('static', filename='script.js')}}"></script>
+            <input class="submit" type="submit" id ="submit" name="submit" value="Submit">
+        </nav><br>
+        <span class="bcrumb">Question {{page}} of {{last}}</span>
+        <div class="main">
+            <div class="tp">
+            <div class="mcq">
+                <div class="question"><b>Q{{page}}.{{question.question}}</b></div>
+                <div class="" id="options"> 
+                    <label class="options">
+                        <input type="radio" id="option" name="radio" value="{{question.option1}}">
+                        <p>{{question.option1}}</p>
+                    </label> 
+                    <label class="options">
+                        <input type="radio" id="option" name="radio" value="{{question.option1}}">
+                        <p>{{question.option2}}</p>
+                    </label>
+                    <label class="options"> 
+                        <input type="radio" id="option" name="radio" value="{{question.option1}}"> 
+                        <p>{{question.option3}}</p> 
+                    </label>
+                    <label class="options">
+                        <input type="radio" id="option" name="radio" value="{{question.option1}}"> 
+                        <p>{{question.option4}}</p> 
+                    </label> 
+                </div>
+            </div>
+            <div class="buttons">
+                <!-- <button class="btn btn-primary">Prev</button> -->
+                <a href="{{next}}" class="btn btn-success" id="next" type="button" onclick="test()">Next</a>
+            </div>
+        </div>
+                <input type="hidden" id="new" value="{{page}}">
+                <input type="hidden" name="marks" value="{{marks}}">
+    </form>        
+        </div>
+        {% endfor %}  
+    </body>
+</html>

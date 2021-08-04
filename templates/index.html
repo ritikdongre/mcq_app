@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='login.css')}}">
+    </head>
+    <body>
+        <main>
+            <div class="boxcenter">
+                <div class="rules">
+                    <h2>Rules</h2>
+                    <ol>
+                        <li>Please enter all the details correctly.</li>
+                        <li>Try to finish the exam in given time frame.</li>
+                        <li>You are given 15 seconds for each question</li>
+                        <li>Test will automatically submit when the last question timer ends so be careful</li>
+                        <li>Please read the question carefully</li>
+                    </ol>
+                </div>
+                <div class="login">
+                    <h2>Enter Information</h2>
+                    <form action="/home" method="POST">
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="Enter Your Name" required autofocus><br>
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="emailid@gmail.com" required><br>
+                        <input type="submit" name="Submit" value="Start Test"><br>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
