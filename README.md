@@ -21,8 +21,6 @@ https://user-images.githubusercontent.com/71232003/128176769-3c86b83d-3446-41c9-
 
 6.Question order shall be shuffled for each candidate appearing:heavy_check_mark:```Questions appering on the test are different for each user```
 
-7.Assessment score shall be generated at the time of submission:heavy_check_mark:
-
 # Additional functionality
 
 1.```Login page``` - To take user's data.
