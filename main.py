@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, session
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import text
 from datetime import datetime
-import random
 import json
 
 
